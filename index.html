@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="title">To - Do List</h2>
+      <ul>
+        <li><a href="#tasks" onclick="showSection('tasks')">Tasks</a></li>
+        <li>
+          <a href="#comptasks" onclick="showSection('comptasks')"
+            >Completed Tasks</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="add-tasks-body">
+        <div class="input-title">
+          <h1>Add Tasks</h1>
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="input-group">
+          <h3>Title</h3>
+          <input type="text" id="taskTitle" placeholder="Enter task title" />
+          <h3>Description</h3>
+          <textarea
+            id="taskDescription"
+            placeholder="Enter task description"
+          ></textarea>
+        </div>
+        <button onclick="addTask()">Save Task</button>
+      </div>
+
+      <div id="tasks" class="sectionLeft">
+        <button class="delete-button" onclick="clearAllTasks(true)">
+          Clear All
+        </button>
+        <h1>Tasks</h1>
+        <div class="horizontal-line"></div>
+        <div id="taskCards" class="task-cards"></div>
+        <div class="tasks-body" id="no-task1">
+          <img class="img_no_tasks" src="assets/no_task_yet.png" />
+          <h3>There is no tasks yet.</h3>
+        </div>
+      </div>
+
+      <div id="comptasks" class="sectionLeft">
+        <button class="delete-button" onclick="clearAllTasks(false)">
+          Clear All
+        </button>
+        <h1>Completed Tasks</h1>
+        <div class="horizontal-line"></div>
+        <div id="taskCardsComp" class="task-cards-comp"></div>
+        <div class="tasks-body" id="no-task2">
+          <img class="img_no_tasks" src="assets/no_task_yet.png" />
+          <h3>There is no tasks yet.</h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<!--Ameer Mialeh-->
