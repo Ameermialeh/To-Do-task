@@ -1,6 +1,5 @@
 # To-Do Tasks
-This project was developed as part of training course at ITG software.
-The application allows users to add tasks and show the completed tasks.
+The application allows users to manage and add tasks, as well as display completed tasks.
 The project has been implemented using HTML/CSS/JS.
 
 # Home Screen
